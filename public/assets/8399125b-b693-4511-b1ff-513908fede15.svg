@@ -1,0 +1,15 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Category-Gamepad" clip-path="url(#clip0_0_299)">
+<g id="Vector">
+</g>
+<path id="Vector_2" d="M9.33333 14H46.6667C49.244 14 51.3333 16.0893 51.3333 18.6667V37.3333C51.3333 39.9107 49.244 42 46.6667 42H9.33333C6.756 42 4.66667 39.9107 4.66667 37.3333V18.6667C4.66667 16.0893 6.756 14 9.33333 14Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
+<path id="Vector_3" d="M14 28H23.3333M18.6667 23.3333V32.6667" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
+<path id="Vector_4" d="M35 25.6667V25.6908" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
+<path id="Vector_5" d="M42 30.3333V30.3574" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
+</g>
+<defs>
+<clipPath id="clip0_0_299">
+<rect width="56" height="56" fill="white"/>
+</clipPath>
+</defs>
+</svg>

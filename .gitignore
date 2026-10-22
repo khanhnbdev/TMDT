@@ -1,0 +1,6 @@
+node_modules/
+dist/
+*.tsbuildinfo
+signup-preview.png
+.env
+.env.*
