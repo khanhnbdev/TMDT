@@ -1,10 +1,9 @@
-import WishlistBadge from "./WishlistBadge";
+import HeaderActions from "./layout/HeaderActions";
+import type { HeaderActionsProps } from "./layout/HeaderActions";
 
 const imgCart1 = "/assets/a6621b77-66de-4589-8455-0a1d1a10a6e5.svg";
 const imgComponent2 = "/assets/9c064855-8204-40b1-953b-cc5a5bf67ac9.svg";
 const imgUnderLine = "/assets/5f9ff643-dace-4b05-a79b-2ba996943796.svg";
-const imgWishlist = "/assets/3931428d-caaa-4652-8c0d-380a5cf9c543.svg";
-const imgCart1WithBuy = "/assets/d253498a-d73d-435a-a7ef-72fdd8f7150a.svg";
 
 function Cart1({ className }: { className?: string }) {
   return (
@@ -149,14 +148,10 @@ function Logo({ className }: { className?: string }) {
   );
 }
 
-export default function HomeHeader({
-  wishlistCount = 0,
-}: {
-  wishlistCount?: number;
-}) {
+export default function HomeHeader(props: HeaderActionsProps) {
   return (
     <div
-      className="content-stretch flex gap-[148px] items-center relative size-full"
+      className="content-stretch flex gap-[100px] items-center relative size-full"
       data-node-id="149:1535"
       data-name="Header"
     >
@@ -199,40 +194,7 @@ export default function HomeHeader({
         data-node-id="I149:1535;149:1511"
       >
         <SearchComponentSet className="bg-[#f5f5f5] content-stretch flex flex-col items-center justify-center pl-[20px] pr-[12px] py-[7px] relative rounded-[4px] shrink-0" />
-        <div
-          className="content-stretch flex gap-[16px] items-center justify-center relative shrink-0"
-          data-node-id="I149:1535;149:1513"
-        >
-          <div
-            className="relative shrink-0 size-[32px]"
-            role="button"
-            tabIndex={0}
-            aria-label="Open wishlist"
-            data-node-id="I149:1535;149:1514"
-            data-name="Wishlist"
-          >
-            <img
-              alt=""
-              className="absolute block inset-0 max-w-none size-full"
-              src={imgWishlist}
-            />
-            <WishlistBadge count={wishlistCount} />
-          </div>
-          <a
-            className="block cursor-pointer relative shrink-0 size-[32px]"
-            role="button"
-            tabIndex={0}
-            aria-label="Open cart"
-            data-node-id="I149:1535;149:1515"
-            data-name="Cart1 with buy"
-          >
-            <img
-              alt=""
-              className="absolute block inset-0 max-w-none size-full"
-              src={imgCart1WithBuy}
-            />
-          </a>
-        </div>
+        <HeaderActions {...props} />
       </div>
     </div>
   );

@@ -65,7 +65,10 @@ export default function useStorefront() {
   }, [route]);
 
   useEffect(() => {
-    const onPop = () => setPanel(null);
+    const onPop = () => {
+      setPanel(null);
+      setAccountMenu(false);
+    };
     window.addEventListener("popstate", onPop);
     return () => window.removeEventListener("popstate", onPop);
   }, []);
@@ -85,11 +88,29 @@ export default function useStorefront() {
   }, [wishlist]);
   useEffect(() => {
     const close = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setPanel(null);
+      if (event.key === "Escape") {
+        setPanel(null);
+        setAccountMenu(false);
+      }
     };
     window.addEventListener("keydown", close);
     return () => window.removeEventListener("keydown", close);
   }, []);
+
+  useEffect(() => {
+    if (!accountMenu) return;
+    const closeOutside = (event: PointerEvent) => {
+      const target = event.target;
+      if (
+        target instanceof Element &&
+        !target.closest("[data-account-menu], .account-dropdown")
+      ) {
+        setAccountMenu(false);
+      }
+    };
+    document.addEventListener("pointerdown", closeOutside);
+    return () => document.removeEventListener("pointerdown", closeOutside);
+  }, [accountMenu]);
 
   function showCatalog(nextCategory = "", nextQuery = "") {
     setCategory(nextCategory);
