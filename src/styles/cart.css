@@ -1,0 +1,115 @@
+.cart-table-head,
+.cart-table-row {
+  display: grid;
+  grid-template-columns: 4fr 2fr 2fr 2fr;
+  align-items: center;
+  height: 72px;
+  padding: 0 40px;
+  box-shadow: 0 1px 13px #0000000c;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+.cart-table-row {
+  height: 102px;
+}
+.cart-table-row > :last-child,
+.cart-table-head > :last-child {
+  text-align: right;
+}
+.cart-product {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  position: relative;
+}
+.cart-product img {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+}
+.cart-product > button:not(.remove-item) {
+  padding: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.remove-item {
+  position: absolute;
+  left: -25px;
+  top: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #db4444;
+  color: white;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  line-height: 17px;
+}
+.quantity-stepper {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #0005;
+  border-radius: 4px;
+  height: 44px;
+}
+.quantity-stepper button {
+  width: 36px;
+  border: 0;
+  background: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+.quantity-stepper span {
+  min-width: 30px;
+  text-align: center;
+}
+.cart-mid-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -10px;
+}
+.cart-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.coupon-row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.coupon-row input {
+  width: 300px;
+  height: 56px;
+  padding: 0 24px;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+.cart-summary {
+  width: 470px;
+  min-height: 324px;
+  border: 1.5px solid #000;
+  border-radius: 4px;
+  padding: 32px 24px;
+}
+.cart-summary h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 0 24px;
+}
+.cart-summary > div,
+.summary-line {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: 1px solid #0005;
+}
+.cart-summary > div:nth-last-of-type(1),
+.summary-line:nth-last-of-type(1) {
+  border-bottom: 0;
+}
+.cart-summary .red-button {
+  display: block;
+  margin: 16px auto 0;
+}

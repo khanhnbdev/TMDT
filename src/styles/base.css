@@ -1,0 +1,64 @@
+:root {
+  font-family: Poppins, sans-serif;
+  color: #000;
+  background: #fff;
+}
+[class*="Inter:"] {
+  font-family: Inter, sans-serif !important;
+}
+[class*="Poppins:"] {
+  font-family: Poppins, sans-serif !important;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+.page-shell {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button,
+input {
+  font: inherit;
+}
+.page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1440px;
+  height: 5902px;
+  background: #fff;
+  overflow: hidden;
+}
+.top-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1440px;
+  height: 48px;
+}
+.main-header {
+  position: absolute;
+  top: 88px;
+  left: 135px;
+  width: 1170px;
+  height: 38px;
+}
+.header-rule {
+  position: absolute;
+  top: 142px;
+  left: 0;
+  width: 1440px;
+  border-top: 1px solid #0003;
+}

@@ -1,0 +1,140 @@
+.cart-toast {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  padding: 14px 24px;
+  color: #fff;
+  background: #111;
+  border-radius: 4px;
+  z-index: 40;
+}
+[role="button"],
+[data-product-card],
+[data-name="Fill With Left Arrow"],
+[data-name="Fill with Right Arrow"],
+.footer-columns p,
+.hero [data-node-id="45:286"],
+.music-banner [data-name="Button"],
+.products [data-node-id="85:1786"] {
+  cursor: pointer;
+}
+[role="button"]:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #db4444;
+  outline-offset: 3px;
+}
+.cart-count {
+  position: absolute;
+  right: -6px;
+  top: -10px;
+  background: #db4444;
+  color: #fff;
+  border-radius: 50%;
+  min-width: 18px;
+  height: 18px;
+  font-size: 11px;
+  display: grid;
+  place-items: center;
+}
+.hero-dots {
+  position: absolute;
+  left: 353px;
+  top: 319px;
+  width: 110px;
+  height: 14px;
+  display: flex;
+  gap: 10px;
+  z-index: 2;
+}
+.hero-dots button {
+  width: 14px;
+  height: 14px;
+  flex: 0 0 14px;
+  border: 0;
+  padding: 0;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+.categories:has([data-selected="true"]) [data-category="Camera"] {
+  background: #fff !important;
+  border: 1px solid #0005 !important;
+}
+.categories:has([data-selected="true"]) [data-category="Camera"] p {
+  color: #000 !important;
+}
+.categories:has([data-selected="true"]) [data-category="Camera"] img {
+  filter: brightness(0);
+}
+.categories [data-selected="true"] {
+  background: #db4444 !important;
+  border-color: #db4444 !important;
+}
+.categories [data-selected="true"] p {
+  color: #fff !important;
+}
+.categories [data-selected="true"] img {
+  filter: brightness(0) invert(1) !important;
+}
+[data-name="Fill Heart"][data-saved="true"]::after {
+  content: "♥";
+  position: absolute;
+  inset: 1px 0 0;
+  display: grid;
+  place-items: center;
+  color: #db4444;
+  font:
+    24px/1 Arial,
+    sans-serif;
+  pointer-events: none;
+}
+[data-name="Colour Chnage"] {
+  cursor: pointer;
+}
+.alternate-hero {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 45px 55px 35px 64px;
+}
+.alternate-hero > div {
+  max-width: 360px;
+  z-index: 1;
+}
+.alternate-hero p {
+  font-size: 16px;
+  margin: 0 0 18px;
+}
+.alternate-hero h2 {
+  font:
+    600 44px/1.18 Inter,
+    sans-serif;
+  letter-spacing: 1px;
+  margin: 0 0 22px;
+}
+.alternate-hero button {
+  border: 0;
+  border-bottom: 1px solid #fff;
+  padding: 0 0 3px;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+.alternate-hero img {
+  height: 270px;
+  width: 360px;
+  object-fit: contain;
+}
+.alternate-hero + .hero-dots button {
+  background: #888;
+  border: 2px solid #000;
+}
+.alternate-hero + .hero-dots button.selected {
+  background: #db4444;
+  border-color: #fff;
+}

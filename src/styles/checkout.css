@@ -1,0 +1,85 @@
+.checkout-page h1 {
+  font:
+    500 36px Inter,
+    sans-serif;
+  margin: 0 0 48px;
+}
+.checkout-grid {
+  display: grid;
+  grid-template-columns: 470px 527px;
+  gap: 173px;
+}
+.billing-fields label {
+  display: block;
+  font-size: 16px;
+  color: #0007;
+  margin-bottom: 32px;
+}
+.billing-fields em {
+  color: #db4444;
+  font-style: normal;
+}
+.billing-fields label > input:not([type="checkbox"]) {
+  display: block;
+  margin-top: 8px;
+  height: 50px;
+  width: 100%;
+  border: 0;
+  background: #f5f5f5;
+  border-radius: 4px;
+  padding: 0 16px;
+}
+.billing-fields .save-info {
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: -8px;
+  font-size: 14px;
+}
+.save-info input {
+  accent-color: #db4444;
+  width: 24px;
+  height: 24px;
+}
+.order-summary {
+  padding-top: 30px;
+}
+.checkout-items > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 26px;
+  gap: 20px;
+}
+.checkout-items img {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+}
+.checkout-items b {
+  font-weight: 400;
+  margin-left: auto;
+}
+.radio-line {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 20px;
+}
+.radio-line input {
+  width: 24px;
+  height: 24px;
+  accent-color: #000;
+}
+.radio-line span {
+  margin-left: auto;
+}
+.order-summary .coupon-row {
+  margin: 32px 0;
+}
+.order-summary .coupon-row input {
+  width: 300px;
+}
+.place-order {
+  min-width: 190px;
+}

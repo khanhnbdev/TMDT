@@ -1,0 +1,151 @@
+.route-main {
+  position: absolute;
+  left: 135px;
+  top: 222px;
+  width: 1170px;
+}
+.page-crumb {
+  font-size: 14px;
+  line-height: 21px;
+  color: #0007;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.page-crumb button {
+  background: none;
+  border: 0;
+  color: #0007;
+  padding: 0;
+  cursor: pointer;
+}
+.page-crumb b {
+  font-weight: 400;
+  color: #000;
+}
+.section-title-row,
+.recommend-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-title-row h1 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+}
+.wishlist-page .route-products {
+  margin-top: 60px;
+}
+.route-products {
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  gap: 30px;
+  min-height: 350px;
+}
+.route-product-card {
+  width: 270px;
+  font-size: 16px;
+}
+.route-product-image {
+  width: 270px;
+  height: 250px;
+  position: relative;
+  background: #f5f5f5;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.route-product-image .product-image-button {
+  width: 100%;
+  height: 210px;
+  display: grid;
+  place-items: center;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.route-product-image img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}
+.mini-heart {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 1;
+  width: 34px;
+  height: 34px;
+  background: white;
+  border: 0;
+  border-radius: 50%;
+  font-size: 25px;
+  line-height: 1;
+  cursor: pointer;
+}
+.black-add {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 41px;
+  background: black;
+  border: 0;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+.product-name-link {
+  display: block;
+  margin: 16px 0 8px;
+  border: 0;
+  background: none;
+  padding: 0;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+}
+.product-price {
+  color: #db4444;
+  font-weight: 500;
+}
+.rating {
+  color: #ffad33;
+  margin-top: 8px;
+  font-size: 14px;
+}
+.rating span {
+  color: #0007;
+}
+.recommend-heading {
+  margin-top: 80px;
+  font-size: 20px;
+}
+.recommend-heading > div,
+.related-heading {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.red-marker {
+  display: inline-block;
+  width: 20px;
+  height: 40px;
+  background: #db4444;
+  border-radius: 4px;
+}
+.empty-state {
+  grid-column: 1/-1;
+  padding: 70px;
+  text-align: center;
+  background: #fafafa;
+  height: 250px;
+}
+.empty-state button {
+  color: #db4444;
+  background: none;
+  border: 0;
+  text-decoration: underline;
+  cursor: pointer;
+}

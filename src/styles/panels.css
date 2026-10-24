@@ -1,0 +1,209 @@
+.panel-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  background: #0007;
+  display: flex;
+  justify-content: flex-end;
+}
+.shop-panel {
+  width: min(440px, 100vw);
+  height: 100%;
+  overflow-y: auto;
+  background: #fff;
+  box-shadow: -8px 0 30px #0002;
+  padding: 28px;
+  font-family: Poppins, sans-serif;
+}
+.panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+  margin-bottom: 22px;
+}
+.panel-head h2 {
+  font:
+    600 24px Inter,
+    sans-serif;
+  margin: 0;
+}
+.panel-head button {
+  background: none;
+  border: 0;
+  font-size: 32px;
+  line-height: 1;
+  cursor: pointer;
+}
+.panel-search,
+.signup-form input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  outline-color: #db4444;
+}
+.panel-muted {
+  color: #777;
+  font-size: 13px;
+}
+.panel-empty {
+  padding: 40px 0;
+  color: #666;
+  line-height: 1.6;
+}
+.panel-product {
+  display: flex;
+  gap: 16px;
+  border-bottom: 1px solid #eee;
+  padding: 14px 0;
+}
+.panel-product-image {
+  width: 90px;
+  height: 90px;
+  flex: 0 0 90px;
+  background: #f5f5f5;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.panel-product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.panel-product-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+.panel-product-name {
+  padding: 0;
+  background: none;
+  border: 0;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+}
+.panel-product-copy span {
+  color: #db4444;
+}
+.panel-link {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 13px;
+}
+.panel-row-actions {
+  display: flex;
+  gap: 14px;
+}
+.qty-control {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.qty-control button {
+  width: 30px;
+  height: 28px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.qty-control span {
+  min-width: 24px;
+  text-align: center;
+  color: #000;
+}
+.panel-total {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0;
+  font-size: 18px;
+}
+.panel-primary,
+.panel-secondary {
+  width: 100%;
+  min-height: 45px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+.panel-primary {
+  background: #db4444;
+  color: #fff;
+  border: 1px solid #db4444;
+}
+.panel-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.panel-secondary {
+  background: #fff;
+  border: 1px solid #444;
+}
+.quick-product > img {
+  width: 100%;
+  height: 240px;
+  object-fit: contain;
+  background: #f5f5f5;
+}
+.quick-product h3 {
+  margin: 20px 0 8px;
+  font-size: 22px;
+}
+.quick-product strong {
+  color: #db4444;
+  font-size: 20px;
+}
+.panel-colors {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 18px 0;
+  font-size: 14px;
+}
+.panel-colors button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #f5f5f5;
+  border: 1px solid #aaa;
+  cursor: pointer;
+}
+.panel-colors button.active {
+  border: 2px solid #db4444;
+}
+.info-content {
+  line-height: 1.7;
+}
+.info-content a {
+  text-decoration: underline;
+}
+.signup-form,
+.signup-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.signup-form label {
+  gap: 5px;
+  font-size: 14px;
+}
+.language-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.language-options button {
+  padding: 14px;
+  text-align: left;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+}
