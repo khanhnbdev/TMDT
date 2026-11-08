@@ -7,7 +7,7 @@ import PageRouter from "./pages/PageRouter";
 import ShopPanel from "./ShopPanel";
 import type { PanelMode } from "./panels/types";
 import type { Route } from "./pages/types";
-import { pageHeights } from "./pages/routes";
+import usePageHeight from "./hooks/usePageHeight";
 
 export default function App() {
   const store = useStorefront();
@@ -40,6 +40,7 @@ export default function App() {
     handleClick,
     handleKeyDown,
   } = store;
+  const { pageRef, pageHeight } = usePageHeight(route);
   function openPanel(mode: PanelMode) {
     const routes: Partial<Record<PanelMode, Route>> = {
       cart: "/cart",
@@ -55,12 +56,13 @@ export default function App() {
     <>
       <div
         className="page-shell"
-        style={{ width: 1440 * scale, height: pageHeights[route] * scale }}
+        style={{ width: 1440 * scale, height: pageHeight * scale }}
       >
         <div
+          ref={pageRef}
           className="page"
           style={{
-            height: pageHeights[route],
+            height: pageHeight,
             transform: "scale(" + scale + ")",
             transformOrigin: "top left",
           }}
@@ -90,10 +92,7 @@ export default function App() {
               selectProduct={selectProduct}
             />
           )}
-          <div
-            className="route-footer-wrap"
-            style={{ top: pageHeights[route] - 440 }}
-          >
+          <div className="route-footer-wrap" style={{ top: pageHeight - 440 }}>
             <SiteFooter
               onSubscribe={() =>
                 showNotice(
